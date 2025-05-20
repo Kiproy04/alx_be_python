@@ -1,6 +1,6 @@
-principal = 1000
-rate = 0.05
-time = 3
+Principal = 1000
+Rate = 0.05
+Time = 3
 #calculate the interest, formula (I = P * R * T)
-interest = (principal * rate * time)
+interest = (Principal * Rate * Time)
 print("The simple interest is:", float(interest))
