@@ -10,5 +10,5 @@ product = int(number1 * number2)
 print(product)
 
 ##difference of the variables
-subtract = int(number2 - number1)
+subtract = int(number1 - number2)
 print(subtract)
