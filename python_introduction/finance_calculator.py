@@ -9,6 +9,6 @@ print("Your monthly savings is:", (monthly_savings))
 
 
 ##project annual savings
-projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
+projected_savings = monthly_savings * 12 + monthly_savings * 12 * 0.05
 
 print("Projected savings after one year, with interest, is:", (projected_savings))
