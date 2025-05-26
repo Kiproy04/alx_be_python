@@ -5,7 +5,7 @@ monthly_expense = float(input("Enter your total monthly expenses: "))
 
 ##calculate monthly savings
 monthly_savings = float(monthly_income) - float(monthly_expense)
-print("Your monthly savings is:", (monthly_savings))
+print("Your monthly savings is:", float(monthly_savings))
 
 
 ##project annual savings
