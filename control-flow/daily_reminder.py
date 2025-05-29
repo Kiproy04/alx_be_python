@@ -18,3 +18,5 @@ match Priority:
             print(f"{Task} is a {Priority} priority task that requires immediate attention today!")
         else:
             print(f"{Task} is a {Priority} priority task consider completing it when you have free time.")
+    case _:
+        print("Invaid input")
