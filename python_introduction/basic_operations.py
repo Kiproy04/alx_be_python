@@ -1,14 +1,19 @@
-number1 = 10
-number2 = 5
 
 ##sum of the two variables
-sum = number1 + number2
-print(sum)
+def add (a, b):
+    return a + b
 
 ##product of the variables
-product = int(number1 * number2)
-print(product)
+def multiply (a, b):
+    return a * b
 
 ##difference of the variables
-subtract = int(number1 - number2)
-print(subtract)
+def subtract(a, b):
+    return a - b
+
+##division of the variables
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Division by zero error"
