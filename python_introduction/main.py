@@ -5,7 +5,7 @@ sys.path.append(cwd)
 
 from pathlib import Path
 path = Path(cwd)
-a=str(path.parent.absolute())
+a = str(path.parent.absolute())
 
 sys.path.append(a)
 
