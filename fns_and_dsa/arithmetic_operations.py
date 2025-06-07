@@ -1,4 +1,4 @@
-def perform_operation(operation, num1, num2):
+def perform_operation(num1, num2, operation):
     """
     Perform arithmetic operations based on the provided operation type.
     
