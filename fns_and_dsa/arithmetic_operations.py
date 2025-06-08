@@ -18,8 +18,8 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     elif operation == 'divide':
         if num2 == 0:
-            return num1 / num2
-        else:
             return "Division by zero error"
+        else:
+            return num1 / num2
     else:
         return "Invalid operation"
