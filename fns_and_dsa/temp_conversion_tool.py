@@ -9,7 +9,7 @@ def convert_to_celsius(fahrenheit):
     :param fahrenheit: Temperature in Fahrenheit
     :return: Temperature in Celsius
     """
-    return fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR - 32
+    return fahrenheit - 32 * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
     """
