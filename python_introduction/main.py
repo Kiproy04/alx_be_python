@@ -1,13 +1,7 @@
-import os
-cwd = os.getcwd()
 import sys
-sys.path.append(cwd)
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from pathlib import Path
-path = Path(cwd)
-a = str(path.parent.absolute())
-
-sys.path.append(a)
 
 # Importing the basic_operations module from the python_introduction package
 from python_introduction import basic_operations
