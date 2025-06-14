@@ -21,7 +21,23 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(2, 3), 5)
         self.assertEqual(self.calc.subtract(-1, 1), 0)
 
+    def setUp(self):
+        """Set up the SimpleCalculator instance before each test."""
+        self.calc = SimpleCalculator()
+
+    def test_multiplication(self):
+        """Test the multiplication method."""
+        self.assertEqual(self.calc.multiply(2, 3), 5)
+        self.assertEqual(self.calc.multiply(-1, 1), 0)
+
+    def setUp(self):
+        """Set up the SimpleCalculator instance before each test."""
+        self.calc = SimpleCalculator()
+
+    def test_division(self):
+        """Test the division method."""
+        self.assertEqual(self.calc.divide(2, 3), 5)
+        self.assertEqual(self.calc.divide(-1, 1), 0)
+
     
 
-if __name__ == "__main__":
-    unittest.main()
