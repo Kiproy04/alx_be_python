@@ -5,7 +5,8 @@ class Book:
 
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
-
+         
+    
     def add_book(self):
         self.title.author.add_book()
 
@@ -18,8 +19,7 @@ class EBook(Book):
         self.file_size = int(file_size)
 
         def __str__(self):
-            super().__init__(title, author, file_size)
-            return f"EBook: {self.title} by {self.author} File Size: {self.file_size}"
+            print(f"EBook: {self.title} by {self.author} File Size: {self.file_size}")
 
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
@@ -27,8 +27,7 @@ class PrintBook(Book):
         self.page_count = int(page_count)
 
         def __str__(self):
-            super().__init__(title, author, page_count)
-            return f"PrintBook: {self.title} by {self.author} Page Count: {self.page_count}"
+            print(f"PrintBook: {self.title} by {self.author} Page Count: {self.page_count}")
 
 
 class Library:
@@ -44,11 +43,10 @@ class Library:
 
     def list_books(self):
         if not self.books:
-            print("No books in the library.")
+            print("No books available.")
             return
-        print("Books in the library:")
         for book in self.books:
-            print(f"{book}")
+            return f"- {book}"
         
 
 
