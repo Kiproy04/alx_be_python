@@ -18,7 +18,7 @@ class EBook(Book):
         self.file_size = int(file_size)
 
         def __str__(self):
-            super().__init__(title, author)
+            super().__init__(title, author, file_size)
             return f"EBook: {self.title} by {self.author} File Size: {self.file_size}"
 
 class PrintBook(Book):
@@ -27,13 +27,13 @@ class PrintBook(Book):
         self.page_count = int(page_count)
 
         def __str__(self):
-            super().__init__(title, author)
+            super().__init__(title, author, page_count)
             return f"PrintBook: {self.title} by {self.author} Page Count: {self.page_count}"
 
 
 class Library:
     def __init__(self, books=None):
-        self.books = books if books is not None else []
+        self.books = []
 
     def add_book(self, book):
         if isinstance(book, Book):
