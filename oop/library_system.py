@@ -18,19 +18,19 @@ class PrintBook(Book):
         self.page_count = int(page_count)
 
 class Library:
-    def __init__(self):
-        self._books = []
+    def __init__(self, books):
+        self.books = []
 
     def add_book(self, book):
         if isinstance(book, Book):
-            self._books.append(book)
+            self.books.append(book)
         else:
             print("Only Book instances can be added.")
 
 
     def list_books(self):
         found = False
-        for book in self._books:
+        for book in self.books:
             if book.is_available():
                 print(f" - {book}")
                 found = True
