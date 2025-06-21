@@ -1,3 +1,5 @@
+import math
+from math import pi
 class Shape:
     def area(self):
         raise NotImplementedError
@@ -15,4 +17,4 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return 3.14 * self.radius * self.radius
+        return math.pi * self.radius * self.radius
